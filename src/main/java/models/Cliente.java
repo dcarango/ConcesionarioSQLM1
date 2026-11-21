@@ -1,5 +1,9 @@
 package models;
 
+/**
+ * Cliente:
+ * Clase utilizada para modelar los datos que se guardan en la BDD.
+ */
 public class Cliente {
     private Integer id_cliente;
     private String nombre;

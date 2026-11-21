@@ -1,5 +1,9 @@
 package models;
 
+/**
+ * Coche:
+ * Clase utilizada para modelar los datos de la BDD.
+ */
 public class Coche {
     private Integer id_coche;
     private String marca;

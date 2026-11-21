@@ -49,5 +49,4 @@ public class StructureDB {
         }
         return message;
     }
-
 }

@@ -12,7 +12,7 @@ import java.sql.SQLException;
 public class CocheRepository {
 
     // Crea un coche apartir de un id_coche
-    public Coche clienteById(Integer idCoche) {
+    public Coche cocheById(Integer idCoche) {
 
         Coche coche = null;
         DBConnection dbConnection = new DBConnection();
@@ -25,8 +25,10 @@ public class CocheRepository {
             pstm.setInt(1,idCoche);
             try (ResultSet rs = pstm.executeQuery();) {
                 if (rs.next()) {
+                    coche = new Coche();
                     coche.setId_coche(rs.getInt("id_coche"));
                     coche.setMarca(rs.getString("marca"));
+                    coche.setModelo(rs.getString("modelo"));
                     coche.setAño(rs.getInt("modelo"));
                     coche.setBastidor(rs.getString("año"));
                     coche.setPrecio(rs.getDouble("precio"));

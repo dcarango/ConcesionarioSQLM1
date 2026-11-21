@@ -2,6 +2,10 @@ package models;
 
 import java.time.LocalDate;
 
+/**
+ * Venta:
+ * Clase utilizada para modelar los datos de la BDD,
+ */
 public class Venta {
     private Integer id_venta;
     private Integer id_coche;

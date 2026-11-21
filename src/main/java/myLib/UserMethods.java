@@ -12,16 +12,12 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.regex.PatternSyntaxException;
 
-import static java.lang.IO.println;
-
 public class UserMethods {
     // Regex
     String regexLetras = "^[a-zA-ZáéíóúÁÉÍÓÚñÑ\\s]+$";
     String regexAño = "\\d{4}";
 
-    public void myPrinter(String message){
-        println(message);
-    }
+    public void myPrinter(String message){System.out.println((message));}
 
     // - Request -
     public Integer requestInteger(String message){
